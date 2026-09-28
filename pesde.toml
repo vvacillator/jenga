@@ -21,7 +21,6 @@ sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
 React = { wally = "wally#jsdotlua/react", version = "^17.2.1" }
 ReactRoblox = { wally = "wally#jsdotlua/react-roblox", version = "^17.2.1" }
 ReactSpring = { wally = "wally#chriscerie/react-spring", version = "^2.0.0" }
-PrettyReactHooks = { wally = "wally#notmirrox/pretty-react-hooks", version = "^0.1.1" }
 
 Charm = { wally = "wally#littensy/charm", version = "^0.11.0" }
 CharmSync = { wally = "wally#littensy/charm-sync", version = "^0.4.0" }
