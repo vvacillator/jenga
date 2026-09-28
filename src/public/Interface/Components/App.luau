@@ -19,7 +19,7 @@ function App()
                 Size = UDim2.fromScale(0.15, 0.15),
                 Position = UDim2.fromScale(0.5, 0.5),
                 AnchorPoint = Vector2.new(0.5, 0.5)
-            }, {})
+            }, nil)
         }
     }
 end
