@@ -1,0 +1,4 @@
+std = "roblox_luau"
+[lints]
+shadowing = "allow"
+global_usage = "allow"

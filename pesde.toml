@@ -1,0 +1,38 @@
+name = "ayden/jenga"
+version = "0.1.0"
+authors = ["vvacillator"]
+repository = "https://github.com/vvacillator/jenga"
+license = "MIT"
+
+[target]
+environment = "roblox"
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+React = { wally = "wally#jsdotlua/react", version = "^17.2.1" }
+ReactRoblox = { wally = "wally#jsdotlua/react-roblox", version = "^17.2.1" }
+ReactSpring = { wally = "wally#chriscerie/react-spring", version = "^2.0.0" }
+PrettyReactHooks = { wally = "wally#notmirrox/pretty-react-hooks", version = "^0.1.1" }
+
+Charm = { wally = "wally#littensy/charm", version = "^0.11.0" }
+CharmSync = { wally = "wally#littensy/charm-sync", version = "^0.4.0" }
+ReactCharm = { wally = "wally#littensy/react-charm", version = "^0.4.0" }
+
+Jolt = { wally = "toriumslurs/jolt", version = "^4.4.1" }
+Lyra = { wally = "wally#paradoxum-games/lyra", version = "^0.6.0" }
+
+gt = { wally = "wally#corecii/greentea", version = "^0.4.11" }
+Promise = { wally = "wally#evaera/promise", version = "^4.0.0" }
+
+[engines]
+pesde = "^0.7.0"
+lune = "^0.10.2"
