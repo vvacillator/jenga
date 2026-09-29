@@ -7,8 +7,12 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage");
 local Vide = require(ReplicatedStorage.Packages.Vide)
 local create = Vide.create
 
+local Libs = ReplicatedStorage.App.Interface.Libs
+local px = require(Libs.px)
 
 function App()
+    px.usePx()
+    
     return create "ScreenGui" {
         Name = "App",
         IgnoreGuiInset = true,
