@@ -4,16 +4,18 @@
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage");
 
-local React = require(ReplicatedStorage.Packages.React)
-local e = React.createElement
+local Vide = require(ReplicatedStorage.Packages.Vide)
+local create = Vide.create
 
-local Layer = require("./Elements/Layer")
 
 function App()
-    return Layer {
-        name = "App",
-        displayOrder = 1,
-        children = nil
+    return create "ScreenGui" {
+        Name = "App",
+        IgnoreGuiInset = true,
+        ResetOnSpawn = false,
+        ZIndexBehavior = Enum.ZIndexBehavior.Sibling,
+
+        -- We'll add children here
     }
 end
 
