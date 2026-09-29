@@ -18,13 +18,14 @@ roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau
 sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
 
 [dev_dependencies]
-React = { wally = "wally#jsdotlua/react", version = "^17.2.1" }
-ReactRoblox = { wally = "wally#jsdotlua/react-roblox", version = "^17.2.1" }
-ReactSpring = { wally = "wally#chriscerie/react-spring", version = "^2.0.0" }
+Vide = { wally = "wally#centau/vide", version = "^0.4.1" }
+
+Ripple = { wally = "wally#littensy/ripple", version = "^0.10.2" }
+VideRipple = { wally = "wally#littensy/vide-ripple", version = "^0.10.2" }
 
 Charm = { wally = "wally#littensy/charm", version = "^0.11.0" }
 CharmSync = { wally = "wally#littensy/charm-sync", version = "^0.4.0" }
-ReactCharm = { wally = "wally#littensy/react-charm", version = "^0.4.0" }
+VideCharm = { wally = "wally#littensy/vide-charm", version = "^0.4.0" }
 
 Jolt = { wally = "toriumslurs/jolt", version = "^4.4.1" }
 Lyra = { wally = "wally#paradoxum-games/lyra", version = "^0.6.0" }
