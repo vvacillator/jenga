@@ -9,8 +9,14 @@ local Shared = ReplicatedStorage.Shared
 local types = require(Shared.types)
 
 local getAccount, setAccount = Charm.signal(types.accountTemplate)
+local getRampAngle, setRampAngle = Charm.signal(0)
 
 return {
+	-- Accounts
 	getAccount = getAccount,
-	setAccount = setAccount
+	setAccount = setAccount,
+
+	-- Ramp
+	getRampAngle = getRampAngle,
+	setRampAngle = setRampAngle
 }

@@ -19,6 +19,7 @@ sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
 
 [dev_dependencies]
 Vide = { wally = "wally#centau/vide", version = "^0.4.1" }
+ExpressivePrompts = { wally = "wally#miagobble/expressive-prompts", version = "^1.1.5" }
 
 Ripple = { wally = "wally#littensy/ripple", version = "^0.10.2" }
 VideRipple = { wally = "wally#littensy/vide-ripple", version = "^0.10.2" }
@@ -32,6 +33,7 @@ Lyra = { wally = "wally#paradoxum-games/lyra", version = "^0.6.0" }
 
 gt = { wally = "wally#corecii/greentea", version = "^0.4.11" }
 Promise = { wally = "wally#evaera/promise", version = "^4.0.0" }
+Janitor = { wally = "howmanysmall/janitor", version = "^1.18.3" }
 
 [engines]
 pesde = "^0.7.0"

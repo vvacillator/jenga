@@ -14,7 +14,8 @@ local Remote = Jolt.Client "Sync"
 local Players = game:GetService("Players")
 
 CharmSync.client.addSignals({
-    [`account-{Players.LocalPlayer.Name}`] = Store.AppStore.setAccount
+    [`account-{Players.LocalPlayer.Name}`] = Store.AppStore.setAccount,
+    ramp = Store.AppStore.setRampAngle,
 })
 
 Remote:Connect(function(updates)

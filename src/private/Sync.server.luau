@@ -10,20 +10,21 @@ local CharmSync = require(ReplicatedStorage.Packages.CharmSync)
 local Shared = ReplicatedStorage.Shared
 local observers = require(Shared.Util.Observers)
 
+local rampStore = require("./System/Stores/RampStore")
 local accountStore = require("./System/Stores/AccountStore")
 
 local Remote = Jolt.Server "Sync"
 
 CharmSync.server.connect(function(client, updates)
     Remote:Fire(client, updates)
-    print(updates)
 end)
 
 observers.observePlayers(function(player: Player): (() -> ())?
     CharmSync.server.addSignalsToClient(player, {
         [`account-{player.Name}`] = Charm.computed(function()
             return accountStore.getAccount(player.Name)
-        end)
+        end),
+        ramp = rampStore.getAngle
     })
 
     return function()
